@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Duolingo Layout Mockup</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .cardsbar {
+      width: 100%;
+      height: auto;
+      border-bottom: 1px solid #ddd;
+    }
+    .cardsbar img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .container {
+      display: flex;
+      height: calc(100vh - 42px);
+    }
+    .sidebar {
+      width: 258px;
+      background-color: #fff;
+      border-right: 1px solid #ddd;
+      overflow-y: auto;
+    }
+    .sidebar-screenshot {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .main {
+      flex-grow: 1;
+      overflow-y: auto;
+      background-color: #f8f9fa;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding: 20px;
+      gap: 20px;
+    }
+    .language-path {
+      width: 420px;
+    }
+    .topbar-bottom {
+      width: 280px;
+    }
+  </style>
+</head>
+<body>
+  <div class="cardsbar">
+    <img src="assets/cards.png" alt="Cards">
+  </div>
+  <div class="container">
+    <div class="sidebar">
+      <a href="family-hall.html">
+    <img src="assets/sidebar.png" alt="Sidebar Screenshot" class="sidebar-screenshot">
+    </a>
+    </div>
+<div class="main" style="position:relative;">
+  <div class="hotspot"></div>
+  <div class="language-path">
+    <img src="assets/language-path.png" alt="Language Path" style="width: 100%;">
+  </div>
+  <div class="topbar-bottom">
+    <img src="assets/topbar.png" alt="Topbar" style="width: 100%;">
+  </div>
+</div>
+  </div>
+  <script>
+  document.querySelector('.main').addEventListener('click', function() {
+    window.location.href = 'photo-upload-page.html';
+  });
+</script>
+<script>
+  document.querySelector('.hotspot').addEventListener('click', function(event) {
+    event.stopPropagation(); // Prevents triggering .main click
+    window.location.href = 'game-page.html';
+  });
+</script>
+</body>
+</html>
+
+
+
+

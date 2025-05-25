@@ -1,0 +1,617 @@
+.child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #fff;
+    width: 1280px;
+    height: 832px;
+}
+.b {
+    position: absolute;
+    top: 78px;
+    left: 629px;
+    font-size: 28px;
+    line-height: 40px;
+}
+.b1 {
+    position: absolute;
+    top: 307px;
+    left: 631px;
+    font-size: 28px;
+    line-height: 40px;
+}
+.ai {
+    position: absolute;
+    top: 461px;
+    left: 631px;
+    font-size: 28px;
+    line-height: 40px;
+}
+.div1 {
+    position: absolute;
+    top: 78px;
+    left: 1173px;
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 500;
+}
+.div2 {
+    position: absolute;
+    top: 163px;
+    left: 180px;
+    border-radius: 12px;
+    width: 188px;
+    height: 162px;
+}
+.divbefore {
+    position: absolute;
+    top: 209px;
+    left: 67px;
+    box-shadow: 0px 2px 0px #e5e5e5;
+    border-radius: 12px;
+    background-color: #fff;
+    border: 2px solid #e5e5e5;
+    box-sizing: border-box;
+    width: 480px;
+    height: 414px;
+}
+.path-copy-32-icon {
+    position: absolute;
+    height: 16.41%;
+    width: 25.43%;
+    top: 15.84%;
+    right: 37.72%;
+    bottom: 67.74%;
+    left: 36.84%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.path-copy-38-icon {
+    position: absolute;
+    height: 29.81%;
+    width: 27.17%;
+    top: 0%;
+    right: 50.42%;
+    bottom: 70.19%;
+    left: 22.41%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.rectangle-icon {
+    position: absolute;
+    height: 70.41%;
+    width: 80.92%;
+    top: 29.53%;
+    right: 9.38%;
+    bottom: 0.06%;
+    left: 9.7%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+}
+.oval-icon {
+    position: absolute;
+    height: 15.98%;
+    width: 14.45%;
+    top: 56.89%;
+    right: 0.01%;
+    bottom: 27.13%;
+    left: 85.54%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.oval-copy-3-icon {
+    position: absolute;
+    height: 15.98%;
+    width: 14.45%;
+    top: 56.89%;
+    right: 85.55%;
+    bottom: 27.13%;
+    left: 0%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.group-7-icon {
+    position: absolute;
+    height: 100%;
+    width: 45.65%;
+    top: 0%;
+    right: 54.35%;
+    bottom: 0%;
+    left: 0%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.group-7-copy-3-icon {
+    position: absolute;
+    height: 100%;
+    width: 45.65%;
+    top: 0%;
+    right: 0.38%;
+    bottom: 0%;
+    left: 53.96%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: contain;
+}
+.group-8-copy-2 {
+    position: absolute;
+    height: 29.59%;
+    width: 44.32%;
+    top: 38.65%;
+    right: 27.67%;
+    bottom: 31.76%;
+    left: 28.01%;
+}
+.path-3-icon {
+    position: absolute;
+    height: 8.64%;
+    width: 27.94%;
+    top: 64.81%;
+    right: 49.87%;
+    bottom: 26.55%;
+    left: 22.19%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.path-4-icon {
+    position: absolute;
+    height: 5.83%;
+    width: 9.83%;
+    top: 74.44%;
+    right: 49.13%;
+    bottom: 19.73%;
+    left: 41.04%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: contain;
+}
+.oval-copy-20-icon {
+    position: absolute;
+    height: 8.21%;
+    width: 7.32%;
+    top: 42.73%;
+    right: 59.71%;
+    bottom: 49.06%;
+    left: 32.96%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: contain;
+}
+.oval-copy-19-icon {
+    position: absolute;
+    height: 12.74%;
+    width: 7.9%;
+    top: 60.25%;
+    right: 46.21%;
+    bottom: 27.01%;
+    left: 45.89%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.group-13-copy {
+    position: absolute;
+    height: 79.42%;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    bottom: 20.58%;
+    left: 0%;
+}
+.rectangle-icon1 {
+    position: absolute;
+    height: 22.64%;
+    width: 80.92%;
+    top: 77.51%;
+    right: 9.22%;
+    bottom: -0.15%;
+    left: 9.86%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.rectangle-icon2 {
+    position: absolute;
+    height: 15.09%;
+    width: 100%;
+    top: 75.49%;
+    right: 0%;
+    bottom: 9.41%;
+    left: 0%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.rectangle-icon3 {
+    position: absolute;
+    height: 15.61%;
+    width: 4.43%;
+    top: 81.21%;
+    right: 54.63%;
+    bottom: 3.18%;
+    left: 40.94%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.rectangle-copy-142-icon {
+    position: absolute;
+    height: 15.61%;
+    width: 4.43%;
+    top: 81.21%;
+    right: 40.84%;
+    bottom: 3.18%;
+    left: 54.73%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.path-icon {
+    position: absolute;
+    height: 6.52%;
+    width: 6.36%;
+    top: 33.93%;
+    right: 40.76%;
+    bottom: 59.55%;
+    left: 52.89%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.boy1 {
+    position: absolute;
+    height: 96.2%;
+    width: 85.08%;
+    top: 1.89%;
+    right: 7.27%;
+    bottom: 1.91%;
+    left: 7.65%;
+}
+.boy {
+    position: absolute;
+    height: 70%;
+    width: 70%;
+    top: 8px;
+    left: 10px;
+    width: 60px;
+    height: 73px;
+    overflow: hidden;
+}
+.div3 {
+    position: absolute;
+    height: 19.12%;
+    width: 83.61%;
+    top: 107.35%;
+    left: 8.2%;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image {
+    position: absolute;
+    top: 11px;
+    left: 11px;
+    width: 61px;
+    height: 68px;
+}
+.choice {
+    position: absolute;
+    top: 144px;
+    left: 650px;
+    box-shadow: 0px 2px 0px #e5e5e5;
+    border-radius: 12px;
+    background-color: #fff;
+    border: 2px solid #e5e5e5;
+    box-sizing: border-box;
+    width: 83px;
+    height: 108px;
+    text-align: center;
+    color: #000;
+}
+.div4 {
+    position: absolute;
+    height: 19.12%;
+    width: 83.61%;
+    top: 107.35%;
+    left: 8.2%;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.grandma-icon {
+    position: absolute;
+    top: 8px;
+    left: 18px;
+    width: 46px;
+    height: 73px;
+    object-fit: cover;
+}
+.choice1 {
+    position: absolute;
+    top: 144px;
+    left: 775px;
+    box-shadow: 0px 2px 0px #e5e5e5;
+    border-radius: 12px;
+    background-color: #fff;
+    border: 2px solid #e5e5e5;
+    box-sizing: border-box;
+    width: 83px;
+    height: 108px;
+    text-align: center;
+    color: #000;
+}
+.div5 {
+    position: absolute;
+    height: 19.12%;
+    width: 83.61%;
+    top: 105.88%;
+    left: 9.84%;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon {
+    position: absolute;
+    width: 78.69%;
+    top: 5px;
+    right: 11.48%;
+    left: 9.84%;
+    max-width: 100%;
+    overflow: hidden;
+    height: 58.2px;
+    object-fit: cover;
+}
+.choice2 {
+    position: absolute;
+    top: 81px;
+    left: 16px;
+    box-shadow: 0px 2px 0px #e5e5e5;
+    border-radius: 12px;
+    background-color: #fff;
+    border: 2px solid #e5e5e5;
+    box-sizing: border-box;
+    width: 83px;
+    height: 108px;
+}
+.image-text {
+    position: absolute;
+    top: 63px;
+    left: 883px;
+    width: 12px;
+    height: 258px;
+    text-align: center;
+    color: #000;
+}
+.woman-icon {
+    position: absolute;
+    height: 86.76%;
+    width: 98.36%;
+    top: 5.88%;
+    right: 0%;
+    bottom: 7.35%;
+    left: 1.64%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.choice3 {
+    position: absolute;
+    top: 144px;
+    left: 1026px;
+    box-shadow: 0px 2px 0px #e5e5e5;
+    border-radius: 12px;
+    background-color: #fff;
+    border: 2px solid #e5e5e5;
+    box-sizing: border-box;
+    width: 83px;
+    height: 108px;
+    text-align: center;
+    color: #000;
+}
+.you {
+    position: relative;
+    line-height: 21.85px;
+    font-weight: 500;
+}
+.word {
+    position: absolute;
+    top: 375px;
+    left: 631px;
+    box-shadow: 0px 2px 0px #e5e5e5;
+    border-radius: 16px;
+    background-color: #e5e5e5;
+    border: 2px solid #e5e5e5;
+    box-sizing: border-box;
+    width: 582px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 14px 18px;
+    font-size: 16px;
+    color: #e5e5e5;
+}
+.word1 {
+    position: absolute;
+    top: 529px;
+    left: 631px;
+    box-shadow: 0px 2px 0px #e5e5e5;
+    border-radius: 16px;
+    background-color: #e5e5e5;
+    border: 2px solid #e5e5e5;
+    box-sizing: border-box;
+    width: 582px;
+    height: 154px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 14px 18px;
+    font-size: 16px;
+    color: #e5e5e5;
+}
+.b2 {
+    position: relative;
+    letter-spacing: 0.8px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+.wrapper {
+    position: absolute;
+    height: 5.53%;
+    width: 7.73%;
+    top: 87.74%;
+    right: 6.25%;
+    bottom: 6.73%;
+    left: 86.02%;
+    box-shadow: 0px 4px 0px #489d26;
+    border-radius: 16px;
+    background-color: #42c62f;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 47px;
+    box-sizing: border-box;
+    text-align: center;
+    color: #fefffe;
+}
+.container {
+    position: absolute;
+    top: calc(50% + 313px);
+    left: calc(50% - 10px);
+    box-shadow: 0px 2px 0px #e1e1e1;
+    border-radius: 16px;
+    background-color: #fff;
+    border: 2px solid #e1e1e1;
+    box-sizing: border-box;
+    width: 99px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 18px;
+    color: #a6a6a6;
+}
+.section-link {
+    position: absolute;
+    height: calc(100% - 786px);
+    width: calc(100% - 1121.1px);
+    top: 392.92px;
+    right: 893.69px;
+    bottom: 393.08px;
+    left: 227.41px;
+    box-shadow: 0px 4px 0px #e5e5e5;
+    border-radius: 16px;
+    background-color: #fff;
+    border: 2px solid #e5e5e5;
+    box-sizing: border-box;
+}
+.b4 {
+    position: absolute;
+    top: 392px;
+    left: 215px;
+    font-size: 20px;
+    letter-spacing: 0.8px;
+    line-height: 18px;
+    text-transform: uppercase;
+    display: flex;
+    color: #1cb0f6;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 172px;
+    height: 48px;
+}
+.duolingo-09-31-ccafa74f-icon {
+    position: absolute;
+    top: 83px;
+    left: 1116px;
+    width: 57px;
+    height: 30px;
+    object-fit: cover;
+}
+.vector-icon {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.vector-icon1 {
+    position: absolute;
+    height: 41.67%;
+    width: 58.33%;
+    top: 45.83%;
+    right: 20.83%;
+    bottom: 12.5%;
+    left: 20.83%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.vector-icon2 {
+    position: absolute;
+    height: 50%;
+    width: 25%;
+    top: 8.33%;
+    right: 37.5%;
+    bottom: 41.67%;
+    left: 37.5%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.microphoneanimation {
+    position: absolute;
+    top: 388px;
+    left: 1172px;
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+}
+.div {
+    width: 100%;
+    position: relative;
+    height: 832px;
+    text-align: left;
+    font-size: 15px;
+    color: #3c3c3c;
+    font-family: Inter;
+}
+
+.wrapper {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #42c62f; /* Button background color */
+    color: #fff; /* Button text color */
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+}
+
+.wrapper:hover {
+    transform: scale(1.1); /* Slightly enlarge the button */
+    background-color: #489d26; /* Darker shade on hover */
+}
