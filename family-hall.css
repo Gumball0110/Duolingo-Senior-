@@ -1,0 +1,196 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #fff;
+}
+
+.layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  margin-left: 200px; /* ⚠️ 和 sidebar 一樣寬 */
+}
+
+
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 200px;
+  border-right: 1px solid #e0e0e0;
+  padding: 24px 16px 0 24px; /* ← 加大左邊 padding */
+  background-color: #fff;
+  z-index: 1000;
+}
+
+
+
+.sidebar .logo {
+  width: 130px;
+  margin-bottom: 30px;
+  display: block;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 22px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+}
+
+.sidebar ul li img {
+  width: 32px;
+  height: 32px;
+}
+
+.main {
+  flex: 1;
+  max-width: 700px;
+}
+
+.cover-container {
+  margin-bottom: 30px;
+}
+
+.cover-photo {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 16px;
+  margin-bottom: 16px;
+}
+
+.profile {
+  text-align: left;
+}
+
+.profile h2 {
+  margin: 0 0 6px;
+  font-size: 30px;
+}
+
+.profile .subtitle {
+  color: gray;
+  margin: 0;
+}
+
+.followers {
+  margin-top: 10px;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.album-section {
+  margin-top: 30px;
+}
+
+.album-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.album-header h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.album-header a {
+  font-size: 14px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.album {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.main-photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.photo-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photo-left .photo-date {
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.photo-left img {
+  width: 260px;
+  border-radius: 12px;
+}
+
+.photo-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.baby-icon {
+  width: 100px;
+  margin: 6px 0;
+}
+
+.caption {
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.photo-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+.photo-buttons button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.photo-buttons img {
+  width: 40px;
+}
+
+/* Right Panel */
+.right-panel {
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.right-box {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
