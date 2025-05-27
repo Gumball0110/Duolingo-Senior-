@@ -1,0 +1,226 @@
+.child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #fff;
+    width: 1280px;
+    height: 832px;
+}
+.div-icon {
+    position: absolute;
+    top: 163px;
+    left: 160px;
+    border-radius: 12px;
+    width: 318px; /* Set the width */
+    height: 508px;
+    object-fit: cover;
+}
+.b2 {
+    position: relative;
+    letter-spacing: 0.8px;
+    line-height: 18px;
+    left: 10px;
+}
+.wrapper {
+    position: absolute;
+    height: 5.53%;
+    width: 7.73%;
+    top: 87.74%;
+    right: 6.25%;
+    bottom: 6.73%;
+    left: 86.02%;
+    box-shadow: 0px 4px 0px #489d26;
+    border-radius: 16px;
+    background-color: #42c62f;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 47px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.container {
+    position: absolute;
+    top: calc(50% + 312px);
+    left: calc(50% - 74px);
+    box-shadow: 0px 2px 0px #e1e1e1;
+    border-radius: 16px;
+    background-color: #fff;
+    border: 2px solid #e1e1e1;
+    box-sizing: border-box;
+    width: 99px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 18px;
+    color: #a6a6a6;
+}
+.b2 {
+    letter-spacing: 0.8px;
+    line-height: 40px;
+    left: 10px;
+}
+
+.divider {
+    width: 600px;
+    position: relative;
+    background-color: #e5e5e5;
+    height: 2px;
+}
+.you {
+    position: relative;
+    line-height: 21.85px;
+    font-weight: 500;
+}
+.word {
+    box-shadow: 0px 2px 0px #e5e5e5;
+    border-radius: 16px;
+    background-color: #fff;
+    border: 2px solid #e5e5e5;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 14px 18px;
+}
+.word2 {
+    width: 64px;
+    box-shadow: 0px 2px 0px #e5e5e5;
+    border-radius: 16px;
+    background-color: #fff;
+    border: 2px solid #e5e5e5;
+    box-sizing: border-box;
+    height: 50px;
+    display: none;
+}
+.words {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 0px 0px 4px;
+    gap: 7px;
+}
+.answer1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 4px;
+}
+.word3 {
+    box-shadow: 0px 2px 0px #e5e5e5;
+    border-radius: 16px;
+    background-color: #e5e5e5;
+    border: 2px solid #e5e5e5;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 14px 18px;
+    color: #e5e5e5;
+}
+.word8 {
+    box-shadow: 0px 2px 0px #e5e5e5;
+    border-radius: 16px;
+    background-color: #e5e5e5;
+    border: 2px solid #e5e5e5;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 14px 18px;
+    font-size: 17px;
+    color: #e5e5e5;
+}
+.choices {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+.answer {
+    position: absolute;
+    top: 112.06px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 38px;
+}
+.doggo {
+    width: 29px;
+    position: relative;
+    height: 22px;
+    overflow: hidden;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+.grandma-i-walked {
+    position: relative;
+    line-height: 39px;
+    font-weight: 500;
+}
+.speech-bubble {
+    position: absolute;
+    top: 0px;
+    left: 4px;
+    border-radius: 15px;
+    background-color: #fff;
+    border: 2px solid #e5e5e5;
+    box-sizing: border-box;
+    width: 480px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 14px 26px;
+    gap: 10px;
+    font-size: 18px;
+    color: #000;
+}
+.answer-parent {
+    position: absolute;
+    top: 67px;
+    left: 0px;
+    width: 600px;
+    height: 262.1px;
+    font-size: 16px;
+    color: #4b4b4b;
+}
+.parent {
+    position: absolute;
+    top: 178px;
+    left: 566px;
+    width: 600px;
+    height: 329.1px;
+    font-size: 28px;
+    color: #3c3c3c;
+}
+.div {
+    width: 100%;
+    position: relative;
+    height: 832px;
+    text-align: left;
+    font-size: 15px;
+    color: #fefffe;
+    font-family: Inter;
+}
+
+.send-button-text {
+    position: relative; /* 取消絕對定位 */
+    top: auto;
+    left: auto;
+    line-height: normal;
+}
+
+.send-button-text {
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1;
+}
