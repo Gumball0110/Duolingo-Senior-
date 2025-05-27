@@ -1,0 +1,282 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #fff;
+  display: flex;
+}
+
+/* --- Sidebar --- */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 200px;
+  border-right: 1px solid #e0e0e0;
+  padding: 24px 16px 0 24px;
+  background-color: #fff;
+  z-index: 1000;
+}
+
+.sidebar .logo {
+  width: 130px;
+  margin-bottom: 30px;
+  display: block;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 22px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+}
+
+.sidebar ul li img {
+  width: 32px;
+  height: 32px;
+}
+
+/* --- Main Path --- */
+.learn-path {
+  margin-left: 220px;
+  margin-right: 320px;
+  padding: 30px;
+  flex: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: 100vh;
+}
+
+.unit {
+  margin-bottom: 140px;
+}
+
+.unit-header {
+  position: relative;
+  border-radius: 12px;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.unit-header.green { background-color: #58cc02; }
+.unit-header.purple { background-color: #a259ff; }
+.unit-header.teal { background-color: #00bfa6; }
+
+.unit-header h3 {
+  margin: 0 0 4px;
+  font-size: 18px;
+}
+
+.unit-header p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.guidebook {
+  background: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  
+}
+
+/* --- granny 圖片固定在 guidebook 右下角 --- */
+
+
+/* --- combo + duo 並排 --- */
+.combo-duo-row {
+  display: flex;
+  justify-content: center;   /* 水平置中 */
+  align-items: center;
+  gap: -20px;                 /* duo 與 combo 的距離 */
+  margin-top: 60px;
+  width: 100%;
+}
+.combo {
+  width: 170px;
+  position: relative;
+  left: 70px; /* 調整這個數值達到視覺置中 */
+}
+
+
+.duo {
+  width: 250px;
+  height: auto;
+  margin: 0;
+}
+
+.combo-img {
+  display: block;
+  margin: 60px auto; /* 垂直間距與置中對齊 */
+}
+
+
+/* --- Unit Steps Node --- */
+.steps {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+  align-items: center;
+}
+
+.node {
+  font-size: 24px;
+  background: #eee;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --- Right Panel --- */
+.right-panel {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 300px;
+  height: 100vh;
+  background: #fff;
+  padding: 20px;
+  box-shadow: -2px 0 6px rgba(0, 0, 0, 0.08);
+  overflow-y: auto;
+}
+
+.right-box {
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 16px;
+  background-color: #fff;
+  object-fit: contain;
+}
+.right-header {
+  width: 100%;
+  margin-bottom: 10px;
+  object-fit: contain;
+}
+
+
+.combo-duo-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  width: 100%;
+  position: relative;
+}
+
+/* combo 包一層以便讓 love-start 絕對定位 */
+.combo-container {
+  position: relative;
+  width: 170px;
+}
+
+/* combo 原本設定保留 */
+.combo {
+  width: 170px;
+}
+
+/* love-start 疊在 combo 上缺口 */
+.love-start {
+  position: absolute;
+  top: 300px;   /* 根據視覺微調上下 */
+  left: 105px;   /* 根據視覺微調左右 */
+  width: 110px;
+  z-index: 2;
+}
+
+.combo-with-characters {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: -10px;   /* 左右間距可調整 */
+  margin: 40px 0;  /* 控制與上下單元距離 */
+}
+
+.character {
+  width: 250px;
+  height: auto;
+}
+
+.character-left {
+  margin-top: -100px;   /* 往上移動 */
+}
+
+.character-right {
+  transform: translateY(400px);  /* 往下移動 */
+}
+
+.duo {
+  width: 250px;
+  height: auto;
+  animation: spin 2s linear infinite; /* 自動旋轉 */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.granny-outside {
+  position: absolute;
+  top: 130px;     /* 從 unit 區塊頂部下來的距離 */
+  right: 370px;   /* 從右邊往內推的距離 */
+  width: 70px;
+  z-index: 10;
+}
+
+.unit {
+  position: relative;
+}
+
+.granny-wrapper {
+  position: absolute;
+  top: 100px;
+  right: 10px;
+}
+
+.granny {
+  width: 70px;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none; /* ✅ 移除底線 */
+  color: #333;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
