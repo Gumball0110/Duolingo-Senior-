@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
       resultHTML = `
         <div class="result-panel correct full-width">
           <div class="feedback-content">
-            <img src="assets/correct-icon.png" class="icon" />
+            <img src="correct-icon.png" class="icon" />
             <span class="result-text">Nice job!</span>
             <button class="btn-continue green">CONTINUE</button>
           </div>
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
       resultHTML = `
         <div class="result-panel incorrect full-width">
           <div class="feedback-content">
-            <img src="assets/wrong-icon.png" class="icon" />
+            <img src="wrong-icon.png" class="icon" />
             <span class="result-text">Correct solution: <strong>${correctAnswer}</strong></span>
             <button class="btn-continue red">CONTINUE</button>
           </div>
