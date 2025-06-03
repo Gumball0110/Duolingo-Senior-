@@ -1,0 +1,300 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fafafa;
+  overflow-x: hidden;
+}
+
+.quiz-container {
+  margin: 40px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
+  min-height: 600px; /* ✅ 新增這行 */
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.progress-bar {
+  height: 8px;
+  background-color: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.progress-fill {
+  width: 33%;
+  height: 100%;
+  background-color: #58cc02;
+}
+
+.question-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.leo-icon {
+  width: 80px;
+}
+
+.bubble {
+  background-color: #f2f2f2;
+  padding: 12px 18px;
+  border-radius: 20px;
+  font-size: 18px;
+}
+.bubble strong {
+  font-size: 30px; /* 可依照需求調整大小 */
+}
+
+.quiz-title {
+  text-align: center;
+  font-size: 22px;
+  margin: 20px 0;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.option {
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  padding: 16px;
+  cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.2s;
+}
+
+.option img {
+  width: 80px;
+  height: auto;
+}
+
+.option:hover {
+  transform: scale(1.1);
+}
+
+.option.selected {
+  background-color: #e6f6ff;
+  border: 2px solid #00bfff;
+}
+
+.option.correct {
+  background-color: #d4f8d4;
+  border: 2px solid #58cc02;
+}
+
+.option.incorrect {
+  background-color: #ffe6e6;
+  border: 2px solid #ff4b4b;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #ddd;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.bottom-area {
+  display: flex;
+  justify-content: center; /* 將按鈕們置中 */
+  gap: 820px; /* 或你想要的距離 */
+  margin-top: 55px;
+}
+
+
+
+
+
+.btn-skip, .btn-check {
+  padding: 12px 26px;
+  border-radius: 16px; /* ← 這裡改圓角 */
+  font-size: 16px;
+  width: 140px; /* ← 加上這行調寬度 */
+  font-weight: 600;
+}
+
+.btn-skip {
+  background-color: #f5f5f5;
+  color: #666;
+  border: 2px solid #ddd;
+}
+
+.btn-check {
+  background-color: #ccc;
+  color: white;
+  cursor: not-allowed;
+  border: none;            /* 確保沒框線 */
+  outline: none !important; /* 移除焦點黑框 */
+  box-shadow: none !important; /* 移除任何陰影 */
+  -webkit-appearance: none; /* 移除瀏覽器預設樣式 */
+}
+
+.btn-check,
+.btn-skip {
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-check:hover {
+  filter: brightness(1.1); /* 提高亮度閃一下 */
+}
+
+.btn-skip:hover {
+  filter: brightness(1.05);
+}
+
+
+
+
+
+.btn-check.enabled {
+  background-color: #58cc02;
+  cursor: pointer;
+  outline: none;
+  box-shadow: none;
+}
+
+
+/* 顯示結果時取代原本的下方區塊 */
+.result-panel {
+  width: 100%;
+  padding: 30px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.result-panel.correct {
+  background-color: #d4f8d4;
+}
+
+.result-panel.incorrect {
+  background-color: #ffe6e6;
+}
+
+.feedback-content {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.feedback-content .icon {
+  width: 36px;
+  height: 36px;
+}
+
+
+
+
+.btn-continue.green {
+  background-color: #58cc02;
+  color: white;
+}
+
+.btn-continue.red {
+  background-color: #ff4b4b;
+  color: white;
+}
+.result-panel.full-width {
+  width: 100%;
+  margin: 0;
+  border-radius: 0 0 20px 20px;
+  padding: 30px 60px;
+  box-sizing: border-box;
+}
+
+.feedback-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* 讓下方 feedback 區取代 bottom-area */
+.result-panel.full-width {
+  width: 100%;
+  position: relative;
+  left: 0;
+  padding: 24px 40px;
+  box-sizing: border-box;
+  border-radius: 0 0 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0;
+}
+
+
+
+.result-panel.correct {
+  background-color: #d4f8d4;
+}
+
+.result-panel.incorrect {
+  background-color: #ffe6e6;
+}
+
+.feedback-content {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.result-text {
+  font-size: 30px;
+  font-weight: bold;
+  color: #222;
+}
+
+
+
+.btn-continue.green {
+  background-color: #58cc02;
+  color: white;
+}
+
+.btn-continue.red {
+  background-color: #ff4b4b;
+  color: white;
+}
+.feedback-content .icon {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+}
+.btn-continue {
+  font-weight: bold;
+  padding: 14px 32px;
+  border-radius: 18px; /* ✅ 這裡調整圓角 */
+  font-size: 16px;
+  border: none;
+  width: 140px;         /* ✅ 可選：統一寬度 */
+}
+
+.btn-continue.green {
+  background-color: #58cc02;
+  color: white;
+}
+
+.btn-continue.red {
+  background-color: #ff4b4b;
+  color: white;
+}
+
+
+

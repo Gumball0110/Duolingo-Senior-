@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz</title>
+  <link rel="stylesheet" href="css/quiz.css" />
+</head>
+<body>
+  <div class="quiz-container">
+    <div class="progress-bar">
+      <div class="progress-fill"></div>
+    </div>
+
+    <div class="question-top">
+      <img src="assets/leo.png" alt="Leo" class="leo-icon" />
+      <div class="bubble">Can I have an <strong>"apple"</strong>, please?</div>
+    </div>
+
+    <h2 class="quiz-title">Which fruit does Leo want?</h2>
+
+    <div class="options">
+      <div class="option" data-answer="orange">
+        <img src="assets/orange.png" alt="Orange" />
+      </div>
+      <div class="option" data-answer="apple">
+        <img src="assets/apple.png" alt="Apple" />
+      </div>
+      <div class="option" data-answer="banana">
+        <img src="assets/banana.png" alt="Banana" />
+      </div>
+    </div>
+
+    <hr class="divider" />
+
+<div class="bottom-area" id="bottom-area">
+  <button class="btn-skip">SKIP</button>
+  <button class="btn-check" id="check-btn" disabled>CHECK</button>
+</div>
+
+<div id="bottom-feedback"></div>
+
+  </div>
+
+  <script src="js/quiz.js"></script>
+</body>
+</html>
