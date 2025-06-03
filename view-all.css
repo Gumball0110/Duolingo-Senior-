@@ -1,0 +1,495 @@
+/* 全局重置與字體 */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #f9f9f9;
+}
+
+/* ====================
+   Sidebar
+   ==================== */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100vh;
+  background: #fff;
+  padding: 24px 20px 0 24px;
+  z-index: 1000;
+}
+.sidebar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -16px; /* 正常線條在 width 邊界，這裡往右移 16px */
+  width: 2px;
+  height: 100%;
+  background: #e0e0e0;
+  z-index: 10;
+}
+.sidebar .logo {
+  width: 130px;
+  margin-bottom: 30px;
+  display: block;
+}
+.sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.sidebar ul li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 22px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+  border-radius: 16px;
+  transition: background 0.2s, border 0.2s, color 0.2s;
+}
+.sidebar ul li.active,
+.sidebar ul li:hover,
+.sidebar ul li.active:hover {
+  background-color: #e6f6ff;
+  border: 2px solid #1cb0f6;
+  word-break: keep-all;  /* 字不會中間斷掉 */
+  color: #1cb0f6;
+  cursor: pointer;
+  min-width: 180px;      /* 只拉長，不調高 */
+}
+.sidebar ul li span {
+  transition: color 0.2s;
+}
+.sidebar ul li.active span,
+.sidebar ul li:hover span {
+  color: #1cb0f6;
+}
+.sidebar ul li img {
+  width: 45px;
+  height: 45px;
+}
+
+
+
+/* ====================
+   Main Content
+   ==================== */
+.main {
+  margin-left: 200px;               /* 避開 sidebar */
+  width: calc(100% - 200px);        /* 佔滿剩餘空間 */
+  padding: 0 40px 40px 40px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+
+
+/* ====================
+   Header
+   ==================== */
+.header {
+  display: flex;
+  justify-content: space-between; /* 兩邊排開 */
+  align-items: center;
+  padding: 24px 48px 16px 16px;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 1px 0 #ececec;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  flex: 1;  /* 左邊內容佔滿剩餘寬度 */
+  gap: 18px;
+}
+
+.header .back-btn {
+  width: 40px;
+  height: 40px;
+  min-width: 72px;
+  min-height: 72px;
+  border-radius: 50%;
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 20px; /* ✅ 改成 0，讓它貼齊左邊 */
+  margin-right: 8px;
+}
+
+
+.header .back-btn img {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+}
+
+.header h2 {
+  margin: 0 8px 0 0;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+.header .search {
+  flex: 1;
+  padding: 12px 24px;
+  border-radius: 32px;
+  border: 1.5px solid #ccc;
+  font-size: 20px;
+  background: #fafafa;
+  margin-right: 10px;
+}
+
+
+.top-bar-icons {
+  max-width: 325px;  /* ✅ 強制縮圖 */
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 10px;  /* ⬅️ 數值越大越靠右 */
+}
+
+.top-bar-icons img {
+  width: 100%;
+  object-fit: contain;
+}
+
+
+.search-wrapper {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.search-wrapper .search {
+  width: 100%;
+  padding: 12px 48px 12px 24px; /* 右邊空間預留給 icon */
+  border-radius: 32px;
+  border: 1.5px solid #ccc;
+  font-size: 20px;
+  background: #fafafa;
+  box-sizing: border-box;
+}
+
+.calendar-inside {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+
+
+
+/* ====================
+   Avatar Filter Bar
+   ==================== */
+.avatar-filter {
+  display: flex;
+  align-items: flex-end;
+  gap: 22px;
+  padding: 22px 48px 20px 48px;
+  overflow-x: auto;
+}
+.avatar-filter .avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #fff;
+  border: 4px solid transparent;
+  box-shadow: 0 0 0 7px #f5f5f5; /* 微白邊，像IG Story */
+  box-shadow: 0 1px 8px #f2f2f2;
+  cursor: pointer;
+  object-fit: cover;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+.avatar-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 600;
+  font-size: 14px;
+  color: #333;
+}
+.avatar-filter .avatar.active,
+.avatar-filter .avatar:hover {
+  border: 4px solid #1cb0f6;
+  background: #e6f6ff;
+  box-shadow: 0 4px 16px #e6f6ff;
+}
+.avatar-filter-wrapper {
+  position: relative; /* 為了讓 calendar 定位參考這塊 */
+}
+.avatar-block p {
+  margin-top: 8px;
+}
+
+
+
+/* ====================
+   Photo Grid (Album)
+   ==================== */
+.photo-grid {
+  position: relative;
+  padding-left: 90px; /* 左邊寬度大一點更舒服 */
+}
+
+
+
+
+.date-label {
+  position: relative;
+  color: #363636;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 18px;
+  margin-top: 42px;
+  margin-left: 0;
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  left: 36px;        /* 把整組右移，與線和圓點對齊 */
+}
+
+.date-label::before {
+  content: "";
+  display: inline-block;
+  width: 22px;       /* 跟你的設計稿一樣大小 */
+  height: 22px;
+  border-radius: 50%;
+  background: #4ee94c; /* 只保留實心綠色 */
+  margin-right: 13px;
+  margin-left: -57px; /* 根據實際位置微調，確保點在線上 */
+  border: none;      /* 去掉外圍白邊 */
+  box-shadow: none;  /* 去掉光暈 */
+  z-index: 2;
+}
+
+
+
+.photo-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-bottom: 10px;
+}
+.photo {
+  width: 100%;
+  max-width: 240px;      /* 保持三欄，防止照片過大 */
+  aspect-ratio: 1 / 1;   /* 強制正方形 */
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 2px 10px rgba(28,176,246,0.04);
+  background: #fff;
+  transition: transform 0.18s;
+  cursor: pointer;
+}
+.photo:hover {
+  transform: scale(1.045) translateY(-4px);
+  box-shadow: 0 6px 24px #cceeff55;
+}
+
+.photo-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.hashtag {
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #4ee94c;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.photo-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 240px;
+}
+
+.heart-icon {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 35px;
+  height: 35px;
+}
+
+
+/* 保證 grid、flex 不會超出造成橫向捲動 */
+.main, .photo-grid, .photo-row, .avatar-filter, .header {
+  min-width: 0;
+}
+
+/* RWD (視窗小於 900px 時兩欄、600px 時單欄) */
+@media (max-width: 900px) {
+  .main { max-width: 100vw; }
+  .photo-row { grid-template-columns: repeat(2, 1fr); }
+  .header, .photo-grid, .avatar-filter { padding-left: 24px; padding-right: 24px; }
+}
+@media (max-width: 600px) {
+  .main { margin-left: 0; padding: 0; }
+  .sidebar { display: none; }
+  .photo-row { grid-template-columns: 1fr; }
+}
+
+.calendar-dropdown {
+  position: fixed;
+  top: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
+  z-index: 3000;
+  width: 420px;
+  display: none;
+}
+
+.calendar-header h3 {
+  margin: 0 0 12px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 12px;
+}
+
+.weekday {
+  font-weight: bold;
+  text-align: center;
+  color: #666;
+}
+
+.calendar-day {
+  position: relative;
+  padding: 10px;
+  background: #f7f7f7;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.calendar-day:hover {
+  background: #e0f0ff;
+}
+
+.calendar-day.active {
+  border: 2px solid #007aff;
+  background: #e6f0ff;
+}
+.calendar-day.has-photo img.preview-pic {
+  position: absolute;
+  top: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+}
+
+.calendar-day.has-photo {
+  padding-top: 36px;
+}
+/* 所有 calendar-day 做成圓形卡片 */
+.calendar-day {
+  width: 40px;
+  height: 40px;
+  background: #f1f1f1;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.2s;
+}
+
+/* 有照片的日 → 用圖片當背景填滿整個圓形 */
+.calendar-day.has-photo img.circle-fill {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  border: 2px solid white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* 高亮選中日期 */
+.calendar-day.active {
+  outline: 2px solid #007aff;
+  outline-offset: 2px;
+}
+
+/* 移除原本 .has-photo 補 padding 的寫法 */
+.calendar-day.has-photo {
+  padding: 0;
+}
+.calendar-day {
+  width: 40px;
+  height: 40px;
+  background: #f1f1f1;
+  border-radius: 50%;
+  position: relative;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: center;
+  line-height: 40px;
+}
+
+.calendar-day .day-number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  font-size: 13px;
+  color: black;
+  pointer-events: none;
+}
+
+.calendar-day.has-photo img.circle-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  z-index: 1;
+}
+
