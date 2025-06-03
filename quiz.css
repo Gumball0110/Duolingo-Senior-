@@ -17,11 +17,13 @@ body {
 }
 
 .progress-bar {
-  height: 8px;
+  width: 88%;                    /* ✅ 縮小寬度 */
+  height: 6px;                   /* ✅ 更細的高度 */
   background-color: #eee;
   border-radius: 10px;
   overflow: hidden;
-  margin-bottom: 20px;
+  margin: 20px auto 16px auto;   /* ✅ 垂直間距 & 置中 */
+  position: relative;           /* ✅ 為了放叉叉 */
 }
 
 .progress-fill {
